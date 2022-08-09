@@ -1,0 +1,45 @@
+name: Make website html pages
+
+on:
+  push:
+    branches:
+      - main
+
+
+jobs:
+  build:
+    name: Deploy docs
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v2
+
+      - name: Make html
+        run: |
+          PATH=$PATH:../scholdoc/ scholdoc --to=html --css=$HTML_CSS \
+            --citeproc --csl=$CITEPROC_BIBLIO_STYLE \
+            --mathjax=https://slimgroup.slim.gatech.edu/MathJax/MathJax.js?config=TeX-AMS_HTML-full \
+            --table-of-contents --toc-depth=2 \
+            $INPUT_MD_FILE > $OUTPUT_HTML_FILE
+        env:
+          HTML_CSS: slim-doc.css
+          CITEPROC_BIBLIO_STYLE: apa.csl
+          INPUT_MD_FILE: modelling.md
+          OUTPUT_HTML_FILE: modelling.html
+          LANG: en_US.UTF-8
+        working-directory: ./test-page/
+      
+      - name: Commit html file
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add test-page/modelling.html
+          git commit -m "html page"
+
+      - name: Push html to publish branch
+        uses: ad-m/github-push-action@master
+        with:
+          branch: web-html-pages
+          force: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}

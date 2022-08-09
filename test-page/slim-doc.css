@@ -1,0 +1,343 @@
+a { color: #222222; }
+a:visited { color: #222222; }
+a:hover {
+  color: #f08020;
+}
+pre {
+  border: #777777 1px solid;
+  background-color: #cccccc;
+}
+pre .poetry {
+  border: none;
+  background: none;
+}
+img {
+  border: #777777 0px solid;
+  background-color: #FFFFFF;
+  color: black;
+}
+figcaption {
+  display: block;
+  text-align: left;
+}
+body {
+  font: 14px/1.5em Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman";
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  width: 60em;
+  margin: auto;
+}
+div, h1, h2, h3, h4, h5, h6 { text-align: left; }
+div.wrapper {
+  font-size: 1em;
+  max-width: 47em;
+  min-width: 580px;
+  margin: auto;
+}
+pre { padding: 0.5em; }
+img {
+  margin: 0em;
+  width:100%;
+}
+body { font: 14px/1.5em Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman"; }
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+  text-align: justify;
+  margin: 1.5em 0 1.5em 0;
+  max-width: 60em;
+}
+li p { margin: 1em 0 1em 0; }
+h1, h2, h3, h4 {
+  font-family: Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+  font-weight: bold;
+}
+h1 {
+  font-size: 2em;
+  line-height: 0.857em;
+  margin: 1.75em 0 0.583em 0;
+}
+h2 {
+  font-size: 1.143em;
+  line-height: 1.313em;
+  margin: 1.969em 0 0.656em 0;
+}
+h3, h4 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 2.25em 0 0.75em 0;
+}
+code {
+  font-family: courier;
+  font-size: 0.95em;
+  line-height: 1.75em;
+}
+pre {
+  font-family: courier;
+  font-size: 0.857em;
+  line-height: 1.75em;
+  margin: 0 0 1.75em 0;
+  white-space: pre-wrap;
+  white-space: moz-pre-wrap !important;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+div.bibliography p { text-align: left; }
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.sidebar { padding-top: 3em; }
+.sidebar > h1 { margin-top: 0; }
+.sidebar h3:first-child { margin-top: 0; }
+.sidebar ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.sidebar ul ul { margin-left: 15px; }
+.sidebar img {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.sidebar a { font-weight: normal; }
+.content { padding-top: 3em; }
+.content > h1 { margin-top: 0; }
+.content h3:first-child { margin-top: 0; }
+.content h1:first-child {
+  font-size: 1.75em;
+  margin-bottom: 1em;
+}
+.content img {
+  padding: 0.5em;
+  margin-left: 1em;
+  margin-right: 2em;
+  max-width: 32em;
+}
+.content pre { padding: 0.5em; }
+.content hr {
+  height: 1px;
+  color: black;
+  background-color: black;
+  border: 0;
+}
+.content a { border-bottom: 1px dashed #888888; }
+.tags, .date {
+  font-family: Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+.comments { margin-top: 5em; }
+.comments .comment {
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 0.5em;
+}
+.comments .comment-byline { font-size: 0.75em; }
+.comments .comment-byline a { border: none; }
+div.header {
+  background-image: none;
+  border-style: none;
+  border-bottom: 1px solid black;
+}
+span.logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-family: Didot, AppleMyungjo, Palatino, Times;
+  font-size: 32px;
+  color: black;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+span.tail { color: #888888; }
+span.logo > a > img {
+  border: none;
+  background-color: #ffffff;
+  padding: 0px;
+  margin: 0px;
+}
+table {
+  border: solid black;
+  border-width: 2px 0px;
+  empty-cells: hide;
+  border-spacing: 0px;
+  padding: 2px;
+  margin: 20px auto;
+}
+table caption {
+  margin: 5px;
+  text-align: center;
+  caption-side: bottom;
+}
+thead th {
+  border: solid gray;
+  border-width: 0 0 2px 0;
+  padding: 5px;
+}
+thead > tr:last-child > th { border-style: none; }
+tbody > tr:first-child > td {
+  border: solid gray;
+  border-width: 1px 0 0 0;
+}
+tbody > tr:first-child > th {
+  border: solid gray;
+  border-width: 1px 0 0 0;
+}
+thead + tbody > tr:first-child > td {
+  border: solid black;
+  border-width: 1px 0 0 0;
+}
+thead + tbody > tr:first-child > th {
+  border: solid black;
+  border-width: 1px 0 0 0;
+}
+figure {
+  padding: 0px;
+  margin: 0px;
+}
+pre code {
+  display: block; padding: 0.5em;
+  background: #F0F0F0;
+}
+
+pre code,
+pre .subst,
+pre .tag .title,
+pre .lisp .title,
+pre .clojure .built_in,
+pre .nginx .title {
+  color: black;
+}
+
+pre .string,
+pre .title,
+pre .constant,
+pre .parent,
+pre .tag .value,
+pre .rules .value,
+pre .rules .value .number,
+pre .preprocessor,
+pre .ruby .symbol,
+pre .ruby .symbol .string,
+pre .aggregate,
+pre .template_tag,
+pre .django .variable,
+pre .smalltalk .class,
+pre .addition,
+pre .flow,
+pre .stream,
+pre .bash .variable,
+pre .apache .tag,
+pre .apache .cbracket,
+pre .tex .command,
+pre .tex .special,
+pre .erlang_repl .function_or_atom,
+pre .markdown .header {
+  color: #800;
+}
+
+pre .comment,
+pre .annotation,
+pre .template_comment,
+pre .diff .header,
+pre .chunk,
+pre .markdown .blockquote {
+  color: #888;
+}
+
+pre .number,
+pre .date,
+pre .regexp,
+pre .literal,
+pre .smalltalk .symbol,
+pre .smalltalk .char,
+pre .go .constant,
+pre .change,
+pre .markdown .bullet,
+pre .markdown .link_url {
+  color: #080;
+}
+
+pre .label,
+pre .javadoc,
+pre .ruby .string,
+pre .decorator,
+pre .filter .argument,
+pre .localvars,
+pre .array,
+pre .attr_selector,
+pre .important,
+pre .pseudo,
+pre .pi,
+pre .doctype,
+pre .deletion,
+pre .envvar,
+pre .shebang,
+pre .apache .sqbracket,
+pre .nginx .built_in,
+pre .tex .formula,
+pre .erlang_repl .reserved,
+pre .prompt,
+pre .markdown .link_label,
+pre .vhdl .attribute,
+pre .clojure .attribute,
+pre .coffeescript .property {
+  color: #88F
+}
+
+pre .keyword,
+pre .id,
+pre .phpdoc,
+pre .title,
+pre .built_in,
+pre .aggregate,
+pre .css .tag,
+pre .javadoctag,
+pre .phpdoc,
+pre .yardoctag,
+pre .smalltalk .class,
+pre .winutils,
+pre .bash .variable,
+pre .apache .tag,
+pre .go .typename,
+pre .tex .command,
+pre .markdown .strong,
+pre .request,
+pre .status {
+  font-weight: bold;
+}
+
+pre .markdown .emphasis {
+  font-style: italic;
+}
+
+pre .nginx .built_in {
+  font-weight: normal;
+}
+
+pre .coffeescript .javascript,
+pre .javascript .xml,
+pre .tex .formula,
+pre .xml .javascript,
+pre .xml .vbscript,
+pre .xml .css,
+pre .xml .cdata {
+  opacity: 0.5;
+}
+
+div .figures{
+counter-reset:figure;
+}
+
+a.figure-caption:before{
+counter-increment:figure;
+content: "Figure" counter(figure) ":";
+}
+
+.figure embed{
+	width:600px;
+}
